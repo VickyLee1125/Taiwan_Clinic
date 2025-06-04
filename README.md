@@ -4,8 +4,19 @@
 
 ## 📁 專案結構
 
-- `open_data/`：包含從政府開放平台取得的原始資料。
-- `source/`：包含資料處理與分析的 Python 程式碼。
+```
+Taiwan_Clinic/
+├── open_data/              # 政府開放資料（原始）
+│   └── *.csv / *.xlsx
+├── source/                 # Python 程式碼
+│   ├── main.py             # 主程式
+│   ├── preprocess.py       # 資料預處理
+│   └── visualize.py        # 圖表繪製
+├── requirements.txt        # 套件需求
+├── LICENSE                 # 授權條款
+├── .gitignore              # Git 忽略設定
+└── README.md               # 專案說明
+```
 
 ## 🛠️ 安裝與執行
 
@@ -13,6 +24,7 @@
    ```bash
    pip install -r requirements.txt
    ```
+
 2. 執行主程式：
    ```bash
    python source/main.py
@@ -22,11 +34,11 @@
 
 - 資料清理與預處理
 - 診所分布視覺化
-- 統計分析
+- 統計分析與圖表輸出
 
 ## 📄 授權
 
-本專案採用 MIT 授權，詳見 [LICENSE](LICENSE) 文件。
+本專案採用 MIT 授權，詳見 [LICENSE](LICENSE)。
 
 ## 🙋‍♀️ 貢獻
 
