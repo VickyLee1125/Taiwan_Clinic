@@ -6,16 +6,25 @@
 
 ```
 Taiwan_Clinic/
-├── open_data/              # 政府開放資料（原始）
+├── open_data/                          # 政府開放資料（原始）
 │   └── *.csv / *.xlsx
-├── source/                 # Python 程式碼
-│   ├── main.py             # 主程式
-│   ├── preprocess.py       # 資料預處理
-│   └── visualize.py        # 圖表繪製
-├── requirements.txt        # 套件需求
-├── LICENSE                 # 授權條款
-├── .gitignore              # Git 忽略設定
-└── README.md               # 專案說明
+├── source/                             # Python 程式碼
+│   ├── barplot_CityOfClinic.py
+│   ├── barplot_ClinicGroupUp.py
+│   ├── barplot_One city differentClinic.py
+│   ├── barplot_year of top10 clinic.py
+│   ├── barpolt_all_clinic.py
+│   ├── city_people_data.py
+│   ├── generate_clinic_lineplots_by_department_city.py
+│   ├── lineplot_CityOfClinic.py
+│   ├── one_clinic_on every city.py
+│   ├── people with clinic.py
+│   ├── source_data.py
+│   └── subplot_ClinicOfYear.py
+├── requirements.txt                    # 套件需求
+├── LICENSE                             # 授權條款
+├── .gitignore                          # Git 忽略設定
+└── README.md                           # 專案說明
 ```
 
 ## 🛠️ 安裝與執行
@@ -25,9 +34,9 @@ Taiwan_Clinic/
    pip install -r requirements.txt
    ```
 
-2. 執行主程式：
+2. 執行主程式（視分析目標選擇合適腳本）：
    ```bash
-   python source/main.py
+   python source/people with clinic.py
    ```
 
 ## 📊 功能
